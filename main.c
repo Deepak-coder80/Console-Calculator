@@ -25,20 +25,26 @@ int main()
    scanf("%d",&choice);
 
 
-   if(choice==1){
-        ans=a+b;
-        printf(" The sum is %f",ans);
-   }else if(choice==2){
-        ans=a-b;
-        printf(" The difference is %f",ans);
-   }else if(choice==3){
-        ans=a*b;
-        printf(" The product is %f",ans);
-   }else if(choice==4){
-        ans=a / b;
-        printf(" The answer on division is is %f",ans);
-   }else{
-        printf(" YOU ARE FOOL!!!!");
+   switch(choice){
+   case 1:
+       ans=a+b;
+       printf("The Sum is %f",ans);
+       break;
+    case 2:
+       ans=a-b;
+       printf("The Difference is %f",ans);
+       break;
+    case 3:
+       ans=a*b;
+       printf("The Product is %f",ans);
+       break;
+    case 4:
+       ans=a/b;
+       printf("The Result of Division is %f",ans);
+       break;
+    default:
+        printf("Are You Fool!!");
+
    };
     return 0;
 }
