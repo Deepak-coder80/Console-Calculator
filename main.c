@@ -43,7 +43,7 @@ int main()
        printf("The Result of Division is %f",ans);
        break;
     default:
-        printf("Are You Fool!!");
+        printf(" Fool!!");
 
    };
     return 0;
