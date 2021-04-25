@@ -27,16 +27,16 @@ int main()
 
    switch(choice){
    case 1:
-       printf("Sum = %.2f",(a+b));
+       printf("Sum = %.2f\n",(a+b));
        break;
     case 2:
-       printf("Difference = %.2f",(a-b));
+       printf("Difference = %.2f\n",(a-b));
        break;
     case 3:
-       printf("Product = %.2f",(a*b));
+       printf("Product = %.2f\n",(a*b));
        break;
     case 4:
-       printf("Quotient of Division = %.3f",(a/b));
+       printf("Quotient of Division = %.3f\n",(a/b));
        break;
    
     default:
