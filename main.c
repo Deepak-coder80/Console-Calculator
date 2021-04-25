@@ -14,36 +14,36 @@ Description  : This is a sample console calculator by c programming
 
 int main()
 {
-   int choice;
+   char choice;
    float a,b,ans;
    printf("                             ************************************************\n");
    printf("                                 Hai Welcome to the console calculator\n");
    printf("                             ************************************************\n");
    printf("Enter two numbers");
    scanf("%f%f",&a,&b);
-   printf(" Press 1 for Addition \n Press 2 for Subtraction \n Press 3 for Multiplication \n Press 4 for Division \n Enter Your Choice:");
-   scanf("%d",&choice);
+   printf(" enter '+' for Addition \n Enter '-' for Subtraction \n Enter '*' for Multiplication \n Enter '/' for Division \n  Enter Your Choice:");
+   scanf("%c",&choice);
 
 
    switch(choice){
-   case 1:
+   case '+':
        ans=a+b;
-       printf("The Sum is %f",ans);
+       printf("The Sum is %.2f",ans);
        break;
-    case 2:
+    case '-':
        ans=a-b;
-       printf("The Difference is %f",ans);
+       printf("The Difference is %.2f",ans);
        break;
-    case 3:
+    case '*':
        ans=a*b;
-       printf("The Product is %f",ans);
+       printf("The Product is %.2f",ans);
        break;
-    case 4:
+    case '/':
        ans=a/b;
-       printf("The Result of Division is %f",ans);
+       printf("Quotient is %.3f",ans);
        break;
     default:
-        printf(" Fool!!");
+        printf("Invlaid Entry");
 
    };
     return 0;
