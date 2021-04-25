@@ -14,7 +14,7 @@ Description  : This is a sample console calculator by c programming
 
 int main()
 {
-   char choice;
+   int choice;
    float a,b,ans;
    printf("                             ************************************************\n");
    printf("                                 Hai Welcome to the console calculator\n");
@@ -22,7 +22,7 @@ int main()
    printf("Enter two numbers");
    scanf("%f%f",&a,&b);
    printf(" Enter 1 for Addition \n Enter 2 for Subtraction \n Enter 3 for Multiplication \n Enter 4 for Quotient of Division \n Enter Your Choice:");
-   scanf("%c",&choice);
+   scanf("%d",&choice);
 
 
    switch(choice){
