@@ -15,10 +15,13 @@ Description  : This is a sample console calculator by c programming
 int main()
 {
    int choice;
-   float a,b,ans;
-   printf("                             ************************************************\n");
-   printf("                                 Hai Welcome to the console calculator\n");
-   printf("                             ************************************************\n");
+   float a,b;
+   int n;
+   printf("\t\t\t\t\t\t************************************************\n");
+   printf("\t\t\t\t\t\t\tHai Welcome to the console calculator\n");
+   printf("\t\t\t\t\t\t************************************************\n");
+
+   do{
    printf("Enter two numbers");
    scanf("%f%f",&a,&b);
    printf(" Enter 1 for Addition \n Enter 2 for Subtraction \n Enter 3 for Multiplication \n Enter 4 for Quotient of Division \n Enter Your Choice:");
@@ -43,5 +46,10 @@ int main()
         printf("Invlaid Entry");
 
    };
+
+   printf("Do you want to continue?\n If yes, enter 1 else enter 0:");
+   scanf("%d",&n);
+
+   }while(n==1);
     return 0;
 }
